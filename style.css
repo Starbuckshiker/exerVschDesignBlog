@@ -1,0 +1,90 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: center;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+div.flags {
+  content:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.8g-v5LoAAuTzxowN31u2wgHaDY%26pid%3DApi&f=1);
+  width: 100%;
+  padding: 20px;
+}
+div.flags2 {
+  content:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.P3fEsVwdebQcJ9NAaBSU9QHaEK%26pid%3DApi&f=1);
+  float: left;
+  width: 100%;
+  padding: 20px;
+}
+div.villain {
+  content:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.J0inI5CTSgCZ9XQGfz-GbAHaFL%26pid%3DApi&f=1);
+  width: auto;
+  padding: 20px;
+}
+div.img1 {
+  content:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.VwZJgBQySeTkDwOGPkeimQHaCW%26pid%3DApi&f=1);
+  width: auto;
+  padding: 20px;
+}
+div.img2 {
+  content:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.E1YdBDGDsYY2-vYQPAWHVAHaEK%26pid%3DApi&f=1);
+  width: auto;
+  padding: 20px;
+}
+div.img3 {
+  content:url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.n-qHrcO7L44Lm8WjYy8csAHaEL%26pid%3DApi&f=1);
+  width: auto;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
